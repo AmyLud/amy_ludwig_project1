@@ -71,7 +71,7 @@ p {
 header {
       background: url(./resources/headerMountains/image-1@2x.png);
       background-attachment: fixed;
-      min-height: 100vh;
+      height: 100vh;
       background-size: cover;
       background-position: center;
       margin: 0;
@@ -227,12 +227,12 @@ h3 {
 
 
 .articlePreview {
-      /* border: 1px dashed blue; */
+      border: 1px dashed blue;
       width: 50%;
       background: var(--whiteShade);
       float: left;
-      margin: 50px 0;
-      padding: 1%;
+      margin-top: 80px;
+      /* padding: 1%; */
 }
 
 .previewContainer {
@@ -253,9 +253,10 @@ h3 {
 }
 
 .article p {
-      width: 80%;
+      width: 65%;
       line-height: 2.5rem;
-      margin: 10px auto;
+      margin: 25px auto;
+      /* padding: 0px 25px; */
 }
 
 .article .moreButton {
@@ -271,6 +272,12 @@ h3 {
 .articlePic {
       width: 50%;
       float: left;
+}
+
+.article2 .articlePic,
+.article2 .articlePreview {
+      float: right;
+
 }
 
 
@@ -404,8 +411,8 @@ input, .subButton {
       width: 125px;
 }
 input {
-      width: 65%;
-      max-width: 65%;
+      width: 70%;
+      max-width: 70%;
       border: none;
       padding-left: 25px;
 }
@@ -428,20 +435,196 @@ button {
 }
 
 
-@media (max-width: 1210px) {
+
+@media (max-width: 1400px) {
       .articlePreview {
             margin: 3% 0px;
       }
 }
-
-@media (max-width: 1175px) {
-      .articlePreview{
-            margin: 0px;
+@media (max-width: 1215px) {
+      .articlePreview {
+            margin: 2% 0px;
       }
 }
+@media (max-width: 1115px) {
+      .articlePreview{
+            margin: 1.5% 0px;
+      }
+}
+@media (max-width: 1070px) {
+      .articlePreview{
+            margin: 1% 0px;
+      }
+      .previewContainer {
+            width: 90%;
+      }
+      footer h4 {
+            text-align: center;
+      }
+      footer section,
+      footer .contactSection {
+            margin: 3% 0;
+            text-align: center;
+            width: calc(100% / 3)
+      }
+      .newsletterSection {
+            width: 100%;
+      }
+      form {
+            width: 80%;
+            margin: 0 auto;      
+      }
+      input {
+            width: 70%;
+      }
+      .subButton {
+            width: 30%;
+      }
+
+}
+@media (max-width: 1030px) {
+      .articlePreview{
+            margin: 0.5% 0px;
+      }
+      .previewContainer p {
+            width: 80%;
+      }
+}
+
+
 
 @media (max-width: 975px) {
       .wrapper {
             max-width: 95%; 
       }
+
 }
+@media (max-width: 940px) {
+      
+      .articlePreview {
+            width: 100%;
+            height: 30vh;
+            margin: 0;
+      }
+      .previewContainer {
+            margin: 20px auto;
+            padding: 0;
+      }
+      .articlePic {
+            width: 100%;
+            height: 50%;
+      }
+
+/* Link Section */
+
+      .linkWrap {
+            width: 100%;
+      }
+/* Gallery styles */
+
+      .gallerySection img {
+            margin: 0;
+            max-width: calc(100% / 3);
+      }
+   
+/* FOOTER STYLES */
+      .pageSection,
+      footer .contactSection {
+            width: calc(100% / 2);
+            margin: 0;
+      }
+
+      .postsNav {
+            width: 100%;
+      }
+
+}
+
+
+
+@media (max-width: 550px) {
+      header {
+            min-height: 50vh;
+            background-image: url(resources/headerMountains/image-1.png);
+      }
+      h1 {
+            font-size: 8rem;
+            line-height: 7rem;
+      }
+      h2 {
+            font-size: 2.6rem;
+            margin-top: 150px;
+      }
+      .socialMedia {
+            display: none;
+      }
+
+
+/* ARTICLES STYLES */
+      .articlePreview {
+            height: 35vh;
+      }
+
+      .previewContainer {
+            width: 95%;
+      }
+
+      .articlePreview p {
+            width: 90%;
+      }
+/* Link section */
+
+      .linkSection .wrapper {
+            padding: 20px 0;
+      }
+      .linkWrap a {
+            float: none;
+            width: 100%;
+            margin: 0 0 10px 0;
+      }
+
+/* Gallery Styles */
+
+      .galleryWrapper {
+            max-width: 100%;
+            overflow: hidden;
+      }
+      .gallerySection img {
+            max-width: 50%;
+      }
+      .gallerySection .removed {
+            display: none;
+      }
+
+/* FOOTER STYLES */
+      form {
+            border: 1px solid green;
+            padding: 0;
+            width: 100%;
+      }
+      input {
+            padding: 0;
+      }
+      form input.email, .subButton {
+            max-width: 100%;
+            display: block;
+            width: 100%;
+            float: none;
+            text-align: center;
+      }
+      .pageSection,
+      footer section.contactSection {
+            width: 100%;
+      }
+      .postsNav {
+            margin: 0;
+      }
+
+      .pageSection, 
+      section.contactSection, 
+      .postsNav {
+            margin: 10px 0;
+            padding: 0;
+      }
+}
+

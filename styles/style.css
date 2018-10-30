@@ -236,7 +236,7 @@ h3 {
 }
 
 .previewContainer {
-      /* border: 1px dashed red; */
+      border: 1px dashed red;
       width: 75%;
       margin: 0 auto;   
       text-align: center;

@@ -45,9 +45,14 @@ body {
 }
 
 .wrapper {
-      border: 2px solid red;
+      /* border: 2px solid red; */
       max-width: 90%;
       margin: 0 auto;
+}
+.hidden {
+      position: fixed;
+      top: -100%;
+      left: -100%;
 }
 
 ul {
@@ -70,7 +75,6 @@ p {
 
 header {
       background: url(./resources/headerMountains/image-1@2x.png);
-      /* background-attachment: fixed; */
       height: 100vh;
       background-size: cover;
       background-position: center;
@@ -157,14 +161,10 @@ h1 {
 
 /* ABOUT ME STYLES */
 
-section {
-      /* border: 1px dashed black; */
-}
 .aboutSummitSection h3,
 .aboutSummitSection p,
 .moreButton,
 .aboutSummitSection a {
-      /* border: 1px solid orchid; */
       text-align: center;
 }
 
@@ -184,7 +184,6 @@ h3 {
 .moreButton {
       background-color: var(--accentColour);
       width: 215px;
-      /* padding: 1%; */
       margin: 0 auto 100px;
 }
 .moreLink {
@@ -211,7 +210,6 @@ h3 {
 }
 
 .linkSection a {
-      /* border: 1px solid red; */
       display: block;
       margin: 0;
       text-align: center;
@@ -234,16 +232,13 @@ h3 {
 
 
 .articlePreview {
-      border: 1px dashed blue;
       width: 50%;
       background: var(--whiteShade);
       float: left;
       margin-top: 80px;
-      /* padding: 1%; */
 }
 
 .previewContainer {
-      border: 1px dashed red;
       width: 75%;
       margin: 0 auto;   
       text-align: center;
@@ -263,7 +258,6 @@ h3 {
       width: 65%;
       line-height: 2.5rem;
       margin: 25px auto;
-      /* padding: 0px 25px; */
 }
 
 .article .moreButton {
@@ -310,8 +304,6 @@ h3 {
 .right {
       width: calc(73% - 35px);
       float: left;
-      /* height: 320px; */
-      /* border: 1px solid red; */
 }
 
 .right p,
@@ -354,17 +346,17 @@ h3 {
 
 /* Hiding label on my email field but still keeping it because ~~~~~~~~ACCESSIBLE~~~~~ */
 .visuallyHidden:not(:focus):not(:active) {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          margin: -1px;
-          border: 0;
-          padding: 0;
-          white-space: nowrap;
-          clip-path: inset(100%);
-          clip: rect(0 0 0 0);
-          overflow: hidden;
-    }
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+}
 
 footer,
 footer h4,
@@ -622,11 +614,6 @@ button {
       .mainNav a {
             display: block;
             padding: 30px 100px;
-      }
-      .hidden {
-            position: fixed;
-            top: -100%;
-            left: -100%;
       }
 
       input[type="checkbox"]:checked ~ .mainNav {
